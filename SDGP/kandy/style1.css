@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Merriweather|PT+Serif|Raleway&display=swap');
+@media only screen and (min-width:620px){
+
+}
+body,html{
+	height:100%;
+	font-family: 'Merriweather', serif;
+	font-size:14px;
+	margin:0;
+	overflow-x:hidden;
+}
+.heading{
+	
+	color:white;
+	padding:20px;
+}
+.side{
+	margin:0 auto;
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+}
+.product{
+	float:left;
+	margin:10px 10px 10px 10px;
+	padding:15px;
+	display:block;
+	background-color:rgba(255, 255, 255, 0.527);
+	border-radius:5px;
+	text-align: center;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+
+.product:hover{
+	
+	opacity:0.5;
+
+}
+footer{
+	z-index: 1000;
+	position: fixed;
+	background-color: #111111;
+	color:white;
+	height: 70px;
+	width: 100%;
+	padding: 6px;
+	bottom: 0;
+	text-align:center;
+	margin-top:10px;
+	margin-left:-10px;
+	padding-bottom:10px;
+}
+#container1{
+	background-color:black;
+	box-shadow:2px 2px black;
+	padding:8px;
+	width:13%;
+	float:right;
+	margin-right:40px;
+	margin-top:10px;
+}
+.button1{
+	color:white;
+	background-color:black;
+	border:none;
+	font-family: 'Merriweather', serif;
+	border-radius:100%;
+	
+}
+.button{
+	color:white;
+	background-color:black;
+	border:none;
+	padding:10px;
+	font-family: 'Merriweather', serif;
+	border-radius:5px;
+	
+}
+
+.book{
+	width:10%;
+	color:white;
+	padding:20px;
+	background-color:black;
+	border:1px solid white;
+	border-radius:5px;
+	font-family: 'Merriweather', serif;
+	float:right;
+	margin-bottom:10px;
+	
+}
+.book:hover{
+	background-color:rgba(24, 23, 23, 0.726);
+}
+footer{
+	color:white;
+}

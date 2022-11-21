@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | Dream Lanka Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="gallerystyle.css">
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <div id="toppage">
+        <div class="navcontainer">
+            <nav>
+                <ul>
+                    <div id="logo"><img id="png" src="logo.jpg"></div>
+                    <li id="topic"><a href="mainpage.html">Home</a></li>
+                    <li id="topic"><a href="aboutus.html">About us</a></li>
+                    <li id="topic"><a href="hiking trails.html">Hiking Trails</a></li>
+                    <li id="topic"><a href="shop.html">Shop</a></li>
+                    <li id="topic"><a href="feedback.html">Feedback</a></li>
+                    <li id="topic"><a href="guide.html">Safty guide</a></li>
+                </ul>
+            </nav>
+</head>
+
+<body>
+    <br> <br> <br>
+    
+    <div>
+        <main>
+            <section>
+                <center>
+                    <h1> Shop </h1>
+                </center>
+                <div id="thumbnailHolder">
+                    <img src="i1.jpg" onmouseover="change0()">
+                    <img src="i2.jpg" onmouseover="change1()">
+                    <img src="i3.jpg" onmouseover="change2()">
+                    <img src="i4.jpg" onmouseover="change3()">
+                    <img src="i5.jpg" onmouseover="change4()">
+                </div>
+                <div id="mainImageHolder">
+                    <img id="mainImage" src="i1.jpg" height="562" width="1000">
+                </div>
+
+                <p id="info" style="margin-bottom:10px"></p>
+            </section>
+        </main>
+    </div>
+    <center><a href="#toppage"> Go to Top</a></center>
+    <button
+        style="float:right; width:10%; color:white; padding:20px; background-color:black;border:1px solid white;border-radius:5px; font-family: 'Merriweather', serif;float:right; margin-bottom:10px;">
+        Add to cart
+    </button>
+    <script>
+        document.getElementById("info").innerHTML = "<center><h1>Flash light </h1></center><br><h3>The go green power bull professional work lidhg is a high preformance flash light that perform as promised. powered by two batteries. </h3>";
+        function change0() {
+            document.getElementById("mainImage").src = "i1.jpg";
+            document.getElementById("info").innerHTML = "<center><h1> Flash light </h1></center><br><h3>The go green power bull professional work lidhg is a high preformance flash light that perform as promised. powered by two batteries. </h3>";
+        }
+        function change1() {
+            document.getElementById("mainImage").src = "i2.jpg";
+            document.getElementById("info").innerHTML = "<center><h1> camping tent </h1></center><br><h3>Family dome tent 10'x10'78', sleeps 5, taped seams for weather protection, large mesh star gazer panels, shoked croded fiberglass poles. </h3>";
+        }
+        function change2() {
+            document.getElementById("mainImage").src = "i3.jpg";
+            document.getElementById("info").innerHTML = "<center><h1> hiking backpack </h1></center><br><h3>organized compartment 1- main pocket for most of travel necessities 2- front pocket for you no need to dig or dump stuff out... </h3>";
+        }
+        function change3() {
+            document.getElementById("mainImage").src = "i4.jpg";
+            document.getElementById("info").innerHTML = "<center><h1> hiking boots </h1></center><br><h3> The targhee mid II from KEEN offers four wheel drive to your feet. the shoe is revamped with the KEEN<DRY warterproof breathable membrane...</h3>";
+        }
+        function change4() {
+            document.getElementById("mainImage").src = "i5.jpg";
+            document.getElementById("info").innerHTML = "<center><h1> leech repellent </h1></center><br><h3> leech repellent is a solution applied to skin, clothing or other surface which prevent leech from climbing on you. this product helps you to have...</h3>";
+        }
+       
+    </script>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="company">Dream Lanka Travels &copy; 2019</p>
+        </div>
+    </footer>
+</body>
+
+</html>

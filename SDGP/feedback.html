@@ -1,0 +1,114 @@
+<!DOCTYPEhtml>
+	<html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Home|Feedback Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="common.css" />
+		<link rel="stylesheet" type="text/css" href="feedback.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="navcontainer">
+				<nav>
+					<ul>
+						<div id="logo"><img id="png" src="logo.jpg"></div>
+						<li id="topic"><a href="mainpage.html">Home</a></li>
+						<li id="topic"><a href="aboutus.html">About us</a></li>
+						<li id="topic"><a href="hiking trails.html">Hiking Trails</a></li>
+						<li id="topic"><a href="shop.html">Shop</a></li>
+						<li id="topic"><a href="feedback.html">Feedback</a></li>
+						<li id="topic"><a href="guide.html">Safty guide</a></li>
+
+				</nav>
+			</div>
+		</header>
+		<br> <br> <br> <br>
+		<div class="feedbackContainer">
+			<h1 style="margin-top:5%">
+				<center>
+					<font size="40px">
+						<font color="black">Feedback Form</font>
+				</center><br>
+			</h1>
+
+			<form id="feedbackForm">
+				<label for="name">Name </label></br>
+				<input type="text" id="name" name="name" placeholder="Your Name..."></br>
+
+
+				<label for="email">E-mail</label></br>
+				<input type="text" id="email" name="email" placeholder="Your Email Address.."></br>
+
+				<label for="phoneNumber">Phone No</label></br>
+				<input type="text" id="contactNumber" name="phoneNumber" placeholder="Your Contact Number.."></br>
+
+
+				<label for="message">Feedback</label></br>
+				<textarea id="message" name="comment" rows="10" cols="30"
+					placeholder="Feedback...."></textarea></br></br>
+
+				</br>
+
+				<label for="star">Rate Us</label></br>
+
+				<div class="stars">
+					<input class="starstar" name="star" type="radio" id="rate" value="1 Star" />
+					<input class="starstar" name="star" type="radio" id="rate" value="2 Star" />
+					<input class="starstar" name="star" type="radio" id="rate" value="3 Star" />
+					<input class="starstar" name="star" type="radio" id="rate" value="4 Star" />
+					<input class="starstar" name="star" type="radio" id="rate" value="5 Star" />
+				</div>
+				<br>
+				<div class="radio-text">1 2 3 4 5</div>
+				</br>
+				</br>
+				<center>
+					<button type="button" class="button" onClick="submitbutton();">Submit</button>
+					<button type="reset" class="reset" value="Reset"> Reset </button>
+				</center>
+			</form>
+		</div>
+		<script>
+			function submitbutton() {
+				var form;
+				var name;
+				var comment;
+				var rating;
+				form = document.getElementById("feedbackForm");
+				name = form.elements["name"].value;
+				comment = form.elements["comment"].value;
+				rating = form.elements["rate"].value;
+				if (name === "") {
+					alert("Please fill in the name !!!");
+				} else if (ValidateEmail(document.getElementById("email").value)) {
+					alert("Email address is not valid..Please enter again !!!");
+				} else if (comment == "") {
+					alert("Entering feedback is compulsory...Please enter your feedback");
+				} else if (rating === "") {
+					alert("Entering rating is mandaotry...Please Give us a rating!!");
+				} else {
+					alert("Dear " + name + ", Thank you very much for your feedback, it has been recorded. You have rated our site as " + rating + "" +
+						" and your feedback was " + comment);
+				}
+			}
+			function ValidateEmail(mail) {
+				if ((/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/).test(mail)) {
+					return (false)
+				} else
+					return (true)
+
+			}
+		</script>
+
+	</body>
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<p class="company">Dream Lanka Travels &copy; 2019</p>
+		</div>
+	</footer>
+
+	</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="common.css" />
+  <title>hiking trails</title>
+  <style>
+    .background {
+      background-image: url("wall1.jpg");
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
+  <div class="navcontainer">
+    <nav>
+      <ul>
+        <div id="logo"><img id="png" src="logo.jpg"></div>
+        <li id="topic"><a href="mainpage.html">Home</a></li>
+        <li id="topic"><a href="aboutus.html">About us</a></li>
+        <li id="topic"><a href="hiking trails.html">Hiking Trails</a></li>
+        <li id="topic"><a href="shop.html">Shop</a></li>
+        <li id="topic"><a href="feedback.html">Feedback</a></li>
+        <li id="topic"><a href="guide.html">Safty guide</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="container" id="container" style="text-align:justify;padding:0 30px 0 30px;">
+    <div class="heading">
+      <h1>Hiking Trails</h1>
+    </div>
+    <hr>
+    <p>Sri Lanka's diversity of terrain provide the opportunity for amazing treks and hikes, especially in the Central
+      Highlands. Trekking and hiking through the paddy fields, tea plantations, spice gardens, waterfalls, streams,
+      dense forests, hills and mountains of the tropical island of Sri Lanka brings about a unique experience that
+      cannot be obtained any other way.
+    </p>
+    <div class="side">
+      <div class="product">
+        <a href="kandy/kandy.html">
+          <img src="hanthana.jpg" class="productimage" style="width:225px; height:175px;">
+          <p><b>Kandy</b>
+          </p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="knuckle/knuckle.html">
+          <img src="knuckle.jpg" class="productimage" style="width:225px; height:175px;">
+          <p><b>Knuckel mountain range</b>
+          </p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="belihul oya/belihul oya.html">
+          <img src="belihuloya.jpg" class="productimage" style="width:225px; height:175px;">
+          <p><b>Belihul oya</b>
+          </p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="ohiya/ohiya.html">
+          <img src="ohiya.jpg" class="productimage" style="width:225px; height:175px;">
+          <p><b>Ohiya</b>
+          </p>
+        </a>
+      </div>
+    </div>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <p class="company">Dream Lanka Travels &copy; 2019</p>
+      </div>
+    </footer>
+</body>
+
+</html>

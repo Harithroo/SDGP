@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="common.css" />
+	<link rel="stylesheet" type="text/css" href="home.css" />
+	<link rel="stylesheet" type="text/css" href="itnerystyle.css" />
+	<div class="navcontainer">
+		<nav>
+			<ul>
+				<div id="logo"><img id="png" src="logo.jpg"></div>
+				<li id="topic"><a href="mainpage.html">Home</a></li>
+				<li id="topic"><a href="aboutus.html">About us</a></li>
+				<li id="topic"><a href="hiking trails.html">Hiking Trails</a></li>
+				<li id="topic"><a href="shop.html">Shop</a></li>
+				<li id="topic"><a href="feedback.html">Feedback</a></li>
+				<li id="topic"><a href="guide.html">Safty guide</a></li>
+			</ul>
+		</nav>
+	</div>
+</head>
+
+<body>
+	<section>
+		<div class="slider">
+			<div style="max-width:100%">
+				<img class="mySlides" src="img1.jpg" style="width:100%">
+				<img class="mySlides" src="img7.jpg" style="width:100%">
+				<img class="mySlides" src="img2.jpg" style="width:100%">
+				<img class="mySlides" src="img3.jpg" style="width:100%">
+				<img class="mySlides" src="img4.jpg" style="width:100%">
+				<img class="mySlides" src="img5.jpg" style="width:100%">
+			</div>
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					myIndex++;
+					if (myIndex > x.length) { myIndex = 1 }
+					x[myIndex - 1].style.display = "block";
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+			</script>
+	</section>
+	<div id="container">
+		<div id="middlecontainer">
+			<div id="content1">
+				<h3 style="font-size:40px;background-color:crimson ;color:#fff;text-align:left;"> Discover Your Perfect
+					Sri Lankan Hiking Trails
+				</h3> <br>
+				<p style="color:black; font-size:20px; font-family:San-serif; text-align:justify; margin-top:5px">
+					If you are an avid hiker, you are going to love exploring the alluring wilderness of Sri Lanka.
+					Already a touted tropical destination, the profuse flora and fauna of the country also provide some
+					excellent opportunities for trekking in Sri Lanka.
+					While the tropical country is already a most sought-after holiday destination, trekking in Sri Lanka
+					gives you an opportunity to go offbeat and explore the length and breadth of the country in
+					adventurous ways. Jungle trekking in Sri Lanka is one of the popular experiences tourists opt to
+					venture in during their vacation in Sri Lanka. The dense rainforests store wonderful surprises in
+					the forms of wildlife, waterfalls, and enchanting views. The best part is that most of these treks
+					are just day long making it convenient and doable even for the beginners.
+				</p>
+			</div>
+			<br> <br>
+			<div id="slmap">
+				<img src="slmap.png" alt="Srilankan Map">
+			</div>
+		</div>
+	</div>
+
+	<!-- destination -->
+
+	<br>
+	<fieldset class="field" style="margin:0px, 0px, 0px, 0px">
+		<legend align="center">
+			<h3 align="center" style="margin:1px; color:crimson;">Popular Places to hike</h3>
+		</legend>
+		<div class="column-3" style="position:center">
+			<img src="hanthana.jpg" height="300" width="300" style="padding:28px">
+			<div class="containerpopular">
+				<a href="kandy/pop kandy.html" style="text-decoration:none">
+					<div class="middle">
+						<div class="textpopular">
+							<h5>kandy</h5>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="column-3">
+			<img src="knuckle.jpg" height="300" width="300" style="padding:28px">
+			<a href="knuckle/pop knuckle.html" style="text-decoration:none">
+				<div class="containerpopular">
+					<div class="middle">
+						<div class="textpopular">
+							<h5>knuckles</h5>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="column-3">
+			<img src="belihuloya.jpg" height="300" width="300" style="padding:28px">
+			<a href="belihul oya/pop belihul oya.html" style="text-decoration:none">
+				<div class="containerpopular">
+					<div class="middle">
+						<div class="textpopular">
+							<h5>belihul oya</h5>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="column-3">
+			<img src="ohiya.jpg" height="300" width="300" style="padding:28px">
+			<a href="ohiya/pop ohiya.html" style="text-decoration:none">
+				<div class="containerpopular">
+					<div class="middle">
+						<div class="textpopular">
+							<h5>ohiya</h5>
+						</div>
+					</div>
+				</div>
+		</div>
+	</fieldset>
+	<br>
+	<br>
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<p class="company">Dream Lanka Travels &copy; 2019</p>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+
+html{
+scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800; 
+}
+
+
+.navcontainer {
+	width: 100%;
+	margin:0 -1%;
+}
+
+header {
+  background:#E7E7E7;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#png{
+width:75px;
+height:60px;
+margin-left:0px;
+margin-top:1px;
+ display: inline-block;
+position:relative;
+float:left
+}
+#topic{
+margin-bottom:10px;
+margin-left:5%
+}
+
+nav {
+float:left;
+ padding-bottom:10px;
+ background:white;
+	padding-right:1%;
+	position:fixed;
+	z-index:3;
+	width:100%;
+	margin-top:-1%;
+	opacity:1
+}
+
+nav ul {
+  margin-bottom:-1%;
+  padding-bottom:1px;
+  padding-top:-3%;
+  list-style: none;
+  
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 19px;
+  padding-top: 8px;
+  position: relative;
+ 
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color:crimson;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:crimson;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+	color:white;
+	background-color:crimson;
+	border:none;
+	font-family: 'Merriweather', serif;
+	border-radius:100%;
+	
+}
+
+/* footer */
+footer{
+	z-index:1000;
+	position:relative;
+	background-color:#1b1b1b;
+	opacity:.8;
+	color:white;
+	height: 85px;
+	width: 100%;
+	padding: 6px;
+	bottom: 0;
+	text-align:center;
+	margin-top:50px;
+	margin-left:10px;
+	padding-bottom:25px;
+	clear:both;
+	opacity:1;
+}
+
+.cv,.sitemap,.company {
+	color:#fff
+}
+
+.footer-left{
+	font-size:18px;
+}

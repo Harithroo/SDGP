@@ -1,0 +1,247 @@
+
+body {
+    width: 100%;
+    height: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800; 
+	background:url("trinco.jpg");
+	background-size:fill;
+	background-repeat:no-repeat
+}
+#container{
+	font-size:20px
+}
+}
+/* slideeshow */
+.mySlides {
+	display:none; 
+
+}
+ .slider {
+      width: 100%;
+      height: 500px;
+      margin:0 -.6%;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 5px 5px 10px grey;
+
+    }
+#middlecontainer{
+	padding:0;
+	background:#fff;
+	height:100vh
+	
+	
+}
+#content1{
+	margin-left:-1%;
+	margin-top:-3%;
+	width:60%;
+	background-color:white;
+	margin-bottom:3%;
+	padding:2%;
+	float:left;
+	border:none;
+	background-color:white;
+	
+}
+
+.text{ 
+	color: pink; 
+	font-size: 2vw; 
+}
+
+
+/* popular */
+.field{
+	margin-top:1%;
+	margin-bottom:1%;
+	padding:0;
+	clear:both;
+	margin-right:5%
+}
+.column-1{
+	width: 22%;
+	float: left;
+	padding-left: 24px;
+}
+.column-3{
+	width: 22%;
+	float: left;
+	padding-left:21px;
+}
+.containerpopular {
+    position: relative;
+    width: 30%;
+	margin-top:-180px;
+	margin-bottom:-100px;
+	clear:both
+	
+}
+
+.middle {
+  width: 280%;
+  transition: 1s ease;
+  opacity: 0;
+  position: relative;
+  bottom: -5px;
+  left: 180px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerpopular:hover .image {
+  opacity: 0.2;
+}
+
+.containerpopular:hover .middle {
+  opacity: 0.7;
+}
+
+.textpopular {
+  background-color: #fcfcfc;
+  color:black;
+  font-family:code bold;
+  font-size: 20px;
+  padding: 37px 35px;
+  font-size:calibri;
+  padding:35x;
+}
+h5,h3{
+	font-size:50px
+}
+
+
+
+/* Slideshow container */
+.testimonial{
+ max-width: 1000px;
+  position: relative;
+  margin:100px auto;
+  margin-top: 0px;
+ 
+}
+
+
+/*fornt slide style*/
+.mySlidestesti{
+display:none;
+margin:50px; 
+margin-top:15px;
+float:left;
+background-color:crimson;
+width:900px;
+height:350px;
+box-shadow: 10px 10px 10px -10px rgba(0.5.0 .7);
+
+}
+
+/*heading of slide*/
+
+.topbar{
+width:80%;
+height:50%;
+text-align:left;
+color:white; 
+margin:5px;
+text-align:justify;
+font-size:15px
+}
+
+/* circle imag style*/
+.simg{
+width:250px; 
+height:250px; 
+float:right;
+border:none;
+border-radius:10%; 
+margin:50px; 
+margin-top:-210px;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -76px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -50px;
+  border-radius: 0 3px   3px 0;
+}
+.prev{
+left:0;
+ border-radius: 3px 0 0  3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #b2b2b2;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 2px 5spx;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+h4{
+	width:70%;
+	margin-left:5%;
+	font-size:20px;
+	margin-top:-50px
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+  
+  .active, .dot:hover {
+  background-color: crimson;
+  }
+  /* Fading animation */
+.fade {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+ 
+
